@@ -24,15 +24,19 @@ infra/, notebooks/   Empty — later phases
 
 ## First-time setup (inside the Codespace)
 
-The devcontainer already installed `uv` and `Ollama` for you. You still
-need to pull a model and start the Ollama server yourself — that's a
-deliberate manual step, not something hidden in container startup.
+Run this once per fresh Codespace — nothing installs automatically:
 
-```bash
+\`\`\`bash
+bash scripts/setup.sh
+\`\`\`
+
+Then start the model server and pull two small models:
+
+\`\`\`bash
 ollama serve &                 # start the local model server (leave running)
 ollama pull qwen2.5:1.5b       # ~1GB download, main model
 ollama pull llama3.2:1b        # ~1.3GB download, smaller/faster alternative
-```
+\`\`\`
 
 ## Running things
 
