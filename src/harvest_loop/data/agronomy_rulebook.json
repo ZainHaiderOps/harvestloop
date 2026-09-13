@@ -1,0 +1,82 @@
+[
+  {
+    "rule_id": "AR-001",
+    "crop": "apple",
+    "title": "Extended leaf wetness raises fungal disease risk",
+    "condition": "leaf_wetness_hours exceeds 8 in a single day, especially after rainfall",
+    "recommendation": "Flag the field for an inspection within 48 hours to check for scab or mildew symptoms on leaves and fruit.",
+    "source": "Harvest Loop synthetic rulebook (general orchard-management knowledge, for learning purposes only)"
+  },
+  {
+    "rule_id": "AR-002",
+    "crop": "apple",
+    "title": "Low soil moisture during fruit sizing",
+    "condition": "soil_moisture_pct stays below 20 for more than 5 consecutive days during the summer growth window",
+    "recommendation": "Prioritize the field for irrigation review; prolonged deficit at this stage reduces final fruit size.",
+    "source": "Harvest Loop synthetic rulebook"
+  },
+  {
+    "rule_id": "AR-003",
+    "crop": "grape",
+    "title": "Warm, wet conditions favor downy mildew",
+    "condition": "soil_temperature_c above 18 combined with leaf_wetness_hours above 6",
+    "recommendation": "Schedule a canopy inspection; these conditions are commonly associated with downy mildew outbreaks in grapevines.",
+    "source": "Harvest Loop synthetic rulebook"
+  },
+  {
+    "rule_id": "AR-004",
+    "crop": "grape",
+    "title": "Water stress near veraison affects quality",
+    "condition": "soil_moisture_pct below 15 during the late-summer ripening window",
+    "recommendation": "Note as a quality-risk factor for the season's harvest record, not necessarily an emergency inspection.",
+    "source": "Harvest Loop synthetic rulebook"
+  },
+  {
+    "rule_id": "AR-005",
+    "crop": "wheat",
+    "title": "Waterlogging risk after heavy rain",
+    "condition": "soil_moisture_pct above 85 for more than 2 consecutive days",
+    "recommendation": "Inspect for standing water and root stress; extended waterlogging can suppress yield significantly.",
+    "source": "Harvest Loop synthetic rulebook"
+  },
+  {
+    "rule_id": "AR-006",
+    "crop": "wheat",
+    "title": "Heat stress during grain fill",
+    "condition": "soil_temperature_c above 30 during the grain-fill growth window",
+    "recommendation": "Log as a yield-risk factor; sustained heat during grain fill typically reduces kernel weight.",
+    "source": "Harvest Loop synthetic rulebook"
+  },
+  {
+    "rule_id": "AR-007",
+    "crop": "barley",
+    "title": "Lodging risk after wind and rain",
+    "condition": "soil_moisture_pct above 80 combined with the crop nearing maturity",
+    "recommendation": "Prioritize a field visit to check for lodging (stems bending or falling over), which complicates harvest.",
+    "source": "Harvest Loop synthetic rulebook"
+  },
+  {
+    "rule_id": "AR-008",
+    "crop": "barley",
+    "title": "Drought stress during tillering",
+    "condition": "soil_moisture_pct below 18 during early growth",
+    "recommendation": "Flag for irrigation planning; early drought stress can permanently reduce tiller count and final yield.",
+    "source": "Harvest Loop synthetic rulebook"
+  },
+  {
+    "rule_id": "AR-009",
+    "crop": "apple",
+    "title": "Anomalous sensor readings should not be trusted blindly",
+    "condition": "a single sensor reading is far outside the field's recent range (a spike or drop)",
+    "recommendation": "Treat as a possible sensor fault first; confirm with a second reading or a manual check before acting on it.",
+    "source": "Harvest Loop synthetic rulebook"
+  },
+  {
+    "rule_id": "AR-010",
+    "crop": "grape",
+    "title": "Anomalous sensor readings should not be trusted blindly",
+    "condition": "a single sensor reading is far outside the field's recent range (a spike or drop)",
+    "recommendation": "Treat as a possible sensor fault first; confirm with a second reading or a manual check before acting on it.",
+    "source": "Harvest Loop synthetic rulebook"
+  }
+]

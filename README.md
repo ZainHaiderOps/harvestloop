@@ -30,6 +30,17 @@ Run this once per fresh Codespace — nothing installs automatically:
 bash scripts/setup.sh
 \`\`\`
 
+nohup ollama serve > /tmp/ollama.log 2>&1 &
+disown
+sleep 2
+curl http://localhost:11434        # should now print "Ollama is running"
+
+ollama pull qwen2.5:1.5b
+ollama pull llama3.2:1b
+
+uv run pytest -v
+uv run python scripts/run_hello_graph.py
+
 Then start the model server and pull two small models:
 
 \`\`\`bash
